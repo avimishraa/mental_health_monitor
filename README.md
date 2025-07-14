@@ -78,6 +78,7 @@ date,mood,stress,energy,sleep,emotion,journal
 
 ```
 mental_health_monitor.py       # Main program file
+mental_health_monitor.ipynb    # Jupyter file
 requirements.txt               # Install dependencies
 logs/
 └── mental_health_log.csv      # Automatically created and updated
