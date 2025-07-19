@@ -1,81 +1,114 @@
-🧠 AI-Powered Mental Health Monitoring System
-A Python-based mental health tracking tool that uses AI to detect emotions from journal entries, collects mood/stress/sleep/energy ratings, provides personalized feedback, and logs insights for self-awareness and reflection.
+# 🧠 AI-Powered Mental Health Monitoring System
 
-📌 Features
-✅ Daily mental health tracking (mood, stress, energy, sleep)
-🤖 AI-powered emotion detection using Hugging Face Transformers
-💬 Personalized feedback based on your emotional and numeric input
-📊 CSV logging for historical tracking and trend analysis
-🔒 Fully offline and private (after first model download)
-📁 Auto-organized log storage in a logs/ directory
-🛡️ Input validation to prevent crashes or invalid data
+A Python-based tool for daily mental health tracking that leverages AI to detect emotions from journal entries. It collects mood, stress, energy, and sleep ratings, provides personalized feedback, and logs insights for self-awareness and reflection.
 
-🛠️ Technologies Used
+---
 
-Python 3.8+
-Hugging Face Transformers
-Pretrained model: j-hartmann/emotion-english-distilroberta-base
-CSV for structured logging
-Basic NLP pipeline for emotion classification
+## 📌 Features
 
-🚀 Getting Started
+- ✅ **Daily Mental Health Tracking -** Track mood, stress, energy, and sleep levels.
+- 🤖 **AI-Powered Emotion Detection -** Uses Hugging Face Transformers to detect emotions from text.
+- 💬 **Personalized Feedback -** Offers suggestions based on emotional and numeric inputs.
+- 📊 **Historical Logging -** Saves logs in CSV format for trend analysis.
+- 🔒 **Offline & Private -** Works fully offline after the initial model download.
+- 📁 **Auto-Organized Logs -** Stores data in a dedicated `logs/` directory.
+- 🛡️ **Input Validation -** Prevents crashes and ensures clean data entry.
 
-1. Clone this repository
-git clone https://github.com/avimishraa/mental_health_monitor.git
-cd mental-health-monitor
-2. Install required packages
-Ensure you have Python 3.8+ and pip installed. Then:
+---
 
-pip install -r requirements.txt
-3. Run the application
-python mental_health_monitor.py
+## 🛠️ Technologies Used
 
-✏️ Sample Input & Output
+- **Python 3.8+**
+- **Hugging Face Transformers**
+- **Pretrained Model**: `j-hartmann/emotion-english-distilroberta-base`
+- **CSV** for structured data storage
+- **NLP Pipeline** for emotion classification
 
-📥 Input (via terminal)
+---
 
-1. How happy are you today? 2  
-2. How stressed are you? 4  
-3. How much energy do you have? 2  
-4. How well did you sleep last night? 3  
-5. Write a few words about how you're feeling today:  
+## 🚀 Getting Started
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/avimishraa/mental_health_monitor.git
+   cd mental-health-monitor
+   ```
+
+2. **Install dependencies**  
+   Make sure you have Python 3.8+ and pip installed.
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Run the application**
+   ```bash
+   python mental_health_monitor.py
+   ```
+
+---
+
+## ✏️ Sample Input & Output
+
+**📥 Terminal Input:**
+```
+1. How happy are you today? 2
+2. How stressed are you? 4
+3. How much energy do you have? 2
+4. How well did you sleep last night? 3
+5. Write a few words about how you're feeling today:
 I'm overwhelmed and hopeless. Nothing is helping.
+```
 
-🤖 Output
-
-🧠 Detected Emotion: sadness  
-⚠️ You might be feeling low or stressed. Consider taking a break or talking to someone.  
+**🤖 Output:**
+```
+🧠 Detected Emotion: sadness
+⚠️ You might be feeling low or stressed. Consider taking a break or talking to someone.
 😔 It might help to talk to a friend or jot down your feelings. You're not alone.
+```
 
-🗂️ CSV File (logs/mental_health_log.csv)
-
+**🗂️ CSV Log (`logs/mental_health_log.csv`):**
+```csv
 date,mood,stress,energy,sleep,emotion,journal
 2025-07-14,2,4,2,3,sadness,I'm overwhelmed and hopeless. Nothing is helping.
+```
 
-🧩 Project Structure
+---
 
-mental_health_monitor.py       # Main program file
-mental_health_monitor.ipynb    # Jupyter file
-requirements.txt               # Install dependencies
+## 🧩 Project Structure
+
+```
+mental_health_monitor.py       # Main script
+mental_health_monitor.ipynb    # Optional Jupyter notebook version
+requirements.txt               # Python package dependencies
 logs/
-└── mental_health_log.csv      # Automatically created and updated
-README.md                      # You're here!
+└── mental_health_log.csv      # Automatically generated log file
+README.md                      # Project documentation
+```
 
-🔒 Privacy Note
+---
 
-This tool stores all data locally on your machine. No data is sent to any server after the Hugging Face model is downloaded.
+## 🔒 Privacy Note
 
-📈 Future Improvements
+Your data stays **local**. After downloading the AI model, no external connections are made. Your journal entries and logs are stored only on your machine.
 
-Trend visualizations using Matplotlib or Plotly
-GUI interface with Tkinter or Streamlit
-Daily reminders via email or desktop notification
-Sentiment trends and early warning detection
+---
 
-👨‍💻 Author
+## 📈 Future Improvements
 
-Avinash Mishra
-LinkedIn
+- 📊 Visualizations using Matplotlib or Plotly
+- 🖥️ GUI interface with Tkinter or Streamlit
+- 🔔 Daily reminders via email or desktop notification
+- 📉 Sentiment trend tracking and early warning alerts
 
-📄 License
-This project is open-source and available under the MIT License.
+---
+
+## 👨‍💻 Author
+
+**Avinash Mishra**  
+[LinkedIn](https://www.linkedin.com/in/avinash-mishra)
+
+---
+
+## 📄 License
+
+This project is open-source under the [MIT License](LICENSE).
